@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RDI.Challenge.DataContext\RDI.Challenge.DataContext.csproj" />
+    <ProjectReference Include="..\RDI.Challenge.Domain\RDI.Challenge.Domain.csproj" />
+    <ProjectReference Include="..\RDI.Challenge.RabbitMQ\RDI.Challenge.RabbitMQ.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "RDI.Challenge.Console": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

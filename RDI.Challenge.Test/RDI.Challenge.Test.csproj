@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.16.0" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RDI.Challenge.Business\RDI.Challenge.Business.csproj" />
+    <ProjectReference Include="..\RDI.Challenge.Console\RDI.Challenge.Console.csproj" />
+    <ProjectReference Include="..\RDI.Challenge.DataContext\RDI.Challenge.DataContext.csproj" />
+    <ProjectReference Include="..\RDI.Challenge.Domain\RDI.Challenge.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

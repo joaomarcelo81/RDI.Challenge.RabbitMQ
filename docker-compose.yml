@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    hostname: "rdi-chellenge-rabbit"
+    labels:
+      NAME: "rdi-chellenge-rabbit"
+    ports:
+      - 5672:5672
+      - 15672:15672
+  rdi.challenge.ui:
+    image: ${DOCKER_REGISTRY-}rdichallengeui
+    build:
+      context: .
+      dockerfile: RDI.Challenge.UI/Dockerfile
+    depends_on: 
+       - "rabbitmq"

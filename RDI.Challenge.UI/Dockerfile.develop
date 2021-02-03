@@ -1,0 +1,22 @@
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1
+ARG BUILD_CONFIGURATION=Debug
+ENV ASPNETCORE_ENVIRONMENT=Development
+ENV ASPNETCORE_URLS=http://+:80
+ENV DOTNET_USE_POLLING_FILE_WATCHER=true
+EXPOSE 80
+
+WORKDIR /src
+COPY ["RDI.Challenge.Business/RDI.Challenge.Business.csproj", "RDI.Challenge.Business/"]
+COPY ["RDI.Challenge.DataContext/RDI.Challenge.DataContext.csproj", "RDI.Challenge.DataContext/"]
+COPY ["RDI.Challenge.Domain/RDI.Challenge.Domain.csproj", "RDI.Challenge.Domain/"]
+COPY ["RDI.Challenge.RabbitMQ/RDI.Challenge.RabbitMQ.csproj", "RDI.Challenge.RabbitMQ/"]
+COPY ["RDI.Challenge.UI/RDI.Challenge.UI.csproj", "RDI.Challenge.UI/"]
+
+RUN dotnet restore "RDI.Challenge.UI/RDI.Challenge.UI.csproj"
+COPY . .
+WORKDIR "/src/RDI.Challenge.UI"
+RUN dotnet build --no-restore "RDI.Challenge.UI.csproj" -c $BUILD_CONFIGURATION
+
+RUN echo "exec dotnet run --no-build --no-launch-profile -c $BUILD_CONFIGURATION --" > /entrypoint.sh
+
+ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
