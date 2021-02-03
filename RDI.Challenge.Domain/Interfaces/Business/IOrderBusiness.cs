@@ -11,8 +11,6 @@ namespace RDI.Challenge.Domain.Interfaces.Business
    
         void DirectToArea(string area, QueueItemOrder queueItemOrder);
 
-        Task<IEnumerable<QueueItemOrder>> GetMenuItemsFromOrder(string area);
-
         Task AddAsync(Order Order);
     }
 }

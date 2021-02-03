@@ -41,15 +41,6 @@ namespace RDI.Challenge.UI.Controllers
             
 
             return Ok();
-        }
-
-        [Route("{area}/Items")]
-        [HttpGet]
-        public async Task<IEnumerable<QueueItemOrder>> GetMenuItemByArea(string area)
-        {
-
-            return await _OrderBusiness.GetMenuItemsFromOrder(area);
-
-        }
+        }     
     }
 }

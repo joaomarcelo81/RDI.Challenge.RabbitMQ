@@ -46,21 +46,8 @@ namespace RDI.Challenge.Business
             _RabbitRepository.SendOrder(area, queueItemOrder);
         }
 
-        public async Task<IEnumerable<QueueItemOrder>> GetMenuItemsFromOrder(string area)
-        {
-            return await Task.FromResult<IEnumerable<QueueItemOrder>>(GetMenuItemsFromOrderReturn(area));            
-        }
-        private IEnumerable<QueueItemOrder> GetMenuItemsFromOrderReturn(string area)
-        {
-            var list = _RabbitRepository.ReceiveOrder(area);
-            var queueItemOrderList = new List<QueueItemOrder>();
-            foreach (var item in list)
-            {
-                queueItemOrderList.Add(JsonConvert.DeserializeObject<QueueItemOrder>(item));
-            }
-            return queueItemOrderList;
-        }
-
+      
+  
 
     }
 }
