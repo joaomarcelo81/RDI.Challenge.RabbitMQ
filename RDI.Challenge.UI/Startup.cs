@@ -55,8 +55,8 @@ namespace RDI.Challenge.UI
                     },
                     License = new OpenApiLicense
                     {
-                        Name = "Use under LICX",
-                        Url = new Uri("https://example.com/license"),
+                        Name = "The MIT License",
+                        Url = new Uri("https://opensource.org/license/mit/"),
                     }
                 });
             });
@@ -104,19 +104,14 @@ namespace RDI.Challenge.UI
 
         private static void DefineInjection(IServiceCollection services)
         {
-            
-            
-           
             services.AddEntityFrameworkInMemoryDatabase().AddDbContext<ChallengeContext>();
             services.AddTransient(typeof(IBaseBusiness<>), typeof(BaseBusiness<>));
             services.AddTransient(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddTransient(typeof(IOrderRepository), typeof(OrderRepository));
             services.AddTransient(typeof(IOrderBusiness), typeof(OrderBusiness));
             services.AddTransient(typeof(IRabbitRepository), typeof(RabbitRepository));
-            
-                services.AddTransient(typeof(IMenuItemRepository), typeof(MenuItemRepository));
+            services.AddTransient(typeof(IMenuItemRepository), typeof(MenuItemRepository));
             services.AddTransient(typeof(IMenuItemBusiness), typeof(MenuItemBusiness));
-            
         }
 
         private static void AddLocalData(ChallengeContext context)
