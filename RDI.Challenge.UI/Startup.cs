@@ -51,7 +51,7 @@ namespace RDI.Challenge.UI
                     {
                         Name = "Joao marcelo Guarana",
                         Email = string.Empty,
-                        Url = new Uri("https://twitter.com/spboyer"),
+                        Url = new Uri("https://www.linkedin.com/in/joaomarcelomello/"),
                     },
                     License = new OpenApiLicense
                     {
