@@ -117,12 +117,6 @@ namespace RDI.Challenge.UI
                 services.AddTransient(typeof(IMenuItemRepository), typeof(MenuItemRepository));
             services.AddTransient(typeof(IMenuItemBusiness), typeof(MenuItemBusiness));
             
-
-
-
-
-
-
         }
 
         private static void AddLocalData(ChallengeContext context)

@@ -1,29 +1,3 @@
-# Introduction
-
-My name is João Marcelo, and I am a Software Engineer with over 15 years of experience. Throughout my career, I have worked with a wide range of technologies, allowing me to gain expertise in various areas.
-
-## Experience
-
-I have been involved in numerous software development projects, where I have contributed to the design, implementation, and maintenance of software solutions. My experience spans across different domains and industries, including [mention any specific domains or industries you have worked in].
-
-## Skills
-
-Here are some of the key skills I possess:
-
-- Programming languages: C#, JavaScript, TypeScript
-- Frameworks and libraries: .NET Framework, .NET Core, AngularJS, MOQ, xUnit, WebAPI, REST
-- Databases: SQL Server, MySQL
-- Development methodologies: Agile, Azure DevOps, Git, GitLab, GitHub
-- Containers and orchestration: Docker, Docker Compose
-- Messaging: RabbitMQ, Service Bus
-- Cloud Platforms: Azure (API Management, Azure Functions, Azure Web Service), Amazon Web Services (Lambda, API Gateway, AWS SNS, AWS SQS)
-
-## Contact
-
-Feel free to reach out to me if you have any questions, opportunities, or collaborations. You can contact me via email at joaomarcelog@gmail.com or reach me on Telegram at @joaomarcelo81.
-
-I look forward to connecting with you!
-
 # RDI Challenge
 
 RDI Challenge is a test project that I found on the internet for a job opportunity and developed the code to meet the requirements. It is developed using .NET Core 3.1 and follows the Domain-Driven Design (DDD) architectural pattern. The project utilizes RabbitMQ version 6.2.1 for messaging and NUnit for unit testing. The API documentation is done using Swagger.
