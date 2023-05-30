@@ -49,7 +49,7 @@ namespace RDI.Challenge.UI
                     TermsOfService = new Uri("https://example.com/terms"),
                     Contact = new OpenApiContact
                     {
-                        Name = "Shayne Boyer",
+                        Name = "Joao marcelo Guarana",
                         Email = string.Empty,
                         Url = new Uri("https://twitter.com/spboyer"),
                     },

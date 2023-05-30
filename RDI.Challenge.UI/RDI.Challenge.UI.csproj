@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\Joao Marcelo\Source\repos\RDI.Challenge\RDI.Challenge.UI\RDI.Challenge.UI.xml</DocumentationFile>
+    <!--<DocumentationFile>C:\Users\Joao Marcelo\Source\repos\RDI.Challenge\RDI.Challenge.UI\RDI.Challenge.UI.xml</DocumentationFile>-->
   </PropertyGroup>
 
   <ItemGroup>
